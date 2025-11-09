@@ -78,7 +78,7 @@ const config: Config = {
       title: 'Chanaka Bandara',
       logo: {
         alt: 'Chanaka Bandara Logo',
-        src: 'img/logo.svg',
+        src: 'img/logo.png',
       },
       items: [
         {
