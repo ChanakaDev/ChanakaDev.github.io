@@ -93,7 +93,7 @@ const config: Config = {
           position: 'left',
           label: 'AI & Data Science',
         },
-        { to: '/volunteer', label: 'Volunteer', position: 'left' },
+        { to: '/volunteering', label: 'Volunteering', position: 'left' },
         { to: '/blog', label: 'Blog', position: 'left' },
         {
           href: 'https://www.linkedin.com/in/chanaka-bandara/',
@@ -132,8 +132,8 @@ const config: Config = {
           title: 'Articles',
           items: [
             {
-              label: 'Volunteer',
-              to: '/volunteer',
+              label: 'Volunteering',
+              to: '/volunteering',
             },
             {
               label: 'Blog',
@@ -172,12 +172,12 @@ const config: Config = {
     [
       '@docusaurus/plugin-content-blog',
       {
-        id: 'volunteer-blog',                  // Unique ID for the plugin
-        routeBasePath: 'volunteer',            // URL path → /volunteer
-        path: './volunteer',                   // Folder path in your project root
+        id: 'volunteering-blog',                  // Unique ID for the plugin
+        routeBasePath: 'volunteering',            // URL path → /volunteering
+        path: './volunteering',                   // Folder path in your project root
         showReadingTime: true,
-        blogTitle: 'Volunteer Blog',
-        blogDescription: 'Stories and updates from my volunteer work',
+        blogTitle: 'Volunteering Blog',
+        blogDescription: 'Stories and updates from my volunteering work',
       },
     ],
   ],

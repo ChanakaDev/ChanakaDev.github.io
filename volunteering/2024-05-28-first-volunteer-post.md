@@ -1,8 +1,8 @@
 ---
-slug: first-volunteer-post
-title: First Volunteer Post
+slug: first-volunteering-post
+title: First Volunteering Post
 authors: [chanaka]
-tags: [volunteer, community]
+tags: [volunteering, community]
 ---
 
 Lorem ipsum dolor sit amet...

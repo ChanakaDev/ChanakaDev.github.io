@@ -1,8 +1,8 @@
 ---
-slug: long-volunteer-post
-title: Long Volunteer Post
+slug: long-volunteering-post
+title: Long Volunteering Post
 authors: [chanaka]
-tags: [volunteer, community, long-post]
+tags: [volunteering, community, long-post]
 ---
 
 This is the summary of a very long blog post,
