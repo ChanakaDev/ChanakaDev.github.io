@@ -172,11 +172,11 @@ const config: Config = {
     [
       '@docusaurus/plugin-content-blog',
       {
-        id: 'volunteering-blog',                  // Unique ID for the plugin
+        id: 'volunteering',                  // Unique ID for the plugin
         routeBasePath: 'volunteering',            // URL path → /volunteering
         path: './volunteering',                   // Folder path in your project root
         showReadingTime: true,
-        blogTitle: 'Volunteering Blog',
+        blogTitle: 'Volunteering',
         blogDescription: 'Stories and updates from my volunteering work',
       },
     ],
