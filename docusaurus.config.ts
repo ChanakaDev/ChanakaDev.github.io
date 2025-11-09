@@ -1,11 +1,11 @@
-import {themes as prismThemes} from 'prism-react-renderer';
-import type {Config} from '@docusaurus/types';
+import { themes as prismThemes } from 'prism-react-renderer';
+import type { Config } from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: 'My Site',
+  title: 'Chanaka Bandara',
   tagline: 'Dinosaurs are cool',
   favicon: 'img/favicon.ico',
 
@@ -75,21 +75,38 @@ const config: Config = {
       respectPrefersColorScheme: true,
     },
     navbar: {
-      title: 'My Site',
+      title: 'Chanaka Bandara',
       logo: {
-        alt: 'My Site Logo',
+        alt: 'Chanaka Bandara Logo',
         src: 'img/logo.svg',
       },
       items: [
         {
           type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
+          sidebarId: 'researchSidebar',
           position: 'left',
-          label: 'Tutorial',
+          label: 'Research',
         },
-        {to: '/blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://github.com/facebook/docusaurus',
+          type: 'docSidebar',
+          sidebarId: 'aiSidebar',
+          position: 'left',
+          label: 'AI & Data Science',
+        },
+        { to: '/volunteer', label: 'Volunteer', position: 'left' },
+        { to: '/blog', label: 'Blog', position: 'left' },
+        {
+          href: 'https://www.linkedin.com/in/chanaka-bandara/',
+          label: 'Linkedin',
+          position: 'right',
+        },
+        {
+          href: 'https://www.researchgate.net/profile/Chanaka-Bandara-7',
+          label: 'ResearchGate',
+          position: 'right',
+        },
+        {
+          href: 'https://github.com/ChanakaDev',
           label: 'GitHub',
           position: 'right',
         },
@@ -99,52 +116,73 @@ const config: Config = {
       style: 'dark',
       links: [
         {
-          title: 'Docs',
+          title: 'Projects',
           items: [
             {
-              label: 'Tutorial',
-              to: '/docs/intro',
+              label: 'Research',
+              to: '/docs/research/intro',
+            },
+            {
+              label: 'AI & Data Science',
+              to: '/docs/ai/intro',
             },
           ],
         },
         {
-          title: 'Community',
+          title: 'Articles',
           items: [
             {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+              label: 'Volunteer',
+              to: '/volunteer',
             },
-            {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
-            },
-            {
-              label: 'X',
-              href: 'https://x.com/docusaurus',
-            },
-          ],
-        },
-        {
-          title: 'More',
-          items: [
             {
               label: 'Blog',
               to: '/blog',
             },
+          ],
+        },
+        {
+          title: 'Links',
+          items: [
+            {
+              label: 'Linkedin',
+              href: 'https://www.linkedin.com/in/chanaka-bandara/',
+            },
+            {
+              label: 'ResearchGate',
+              href: 'https://www.researchgate.net/profile/Chanaka-Bandara-7',
+            },
             {
               label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              href: 'https://github.com/ChanakaDev',
             },
           ],
         },
+
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Chanaka Bandara. Built with React.js`,
     },
     prism: {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,
     },
   } satisfies Preset.ThemeConfig,
+
+  plugins: [
+    [
+      '@docusaurus/plugin-content-blog',
+      {
+        id: 'volunteer-blog',                  // Unique ID for the plugin
+        routeBasePath: 'volunteer',            // URL path → /volunteer
+        path: './volunteer',                   // Folder path in your project root
+        showReadingTime: true,
+        blogTitle: 'Volunteer Blog',
+        blogDescription: 'Stories and updates from my volunteer work',
+      },
+    ],
+  ],
+
+
 };
 
 export default config;
