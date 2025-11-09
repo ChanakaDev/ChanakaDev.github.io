@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkdocusaurus_portfolio=globalThis.webpackChunkdocusaurus_portfolio||[]).push([[7499],{8238:o=>{o.exports=JSON.parse('{"metadata":{"permalink":"/ChanakaDev.github.io/volunteering","page":1,"postsPerPage":10,"totalPages":1,"totalCount":4,"blogDescription":"Stories and updates from my volunteering work","blogTitle":"Volunteering"}}')}}]);

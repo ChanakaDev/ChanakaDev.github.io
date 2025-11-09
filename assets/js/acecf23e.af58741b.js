@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkdocusaurus_portfolio=globalThis.webpackChunkdocusaurus_portfolio||[]).push([[1903],{1912:o=>{o.exports=JSON.parse('{"blogBasePath":"/ChanakaDev.github.io/blog","blogTitle":"Blog","authorsListPath":"/ChanakaDev.github.io/blog/authors"}')}}]);
