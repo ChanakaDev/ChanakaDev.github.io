@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkdocusaurus_portfolio=globalThis.webpackChunkdocusaurus_portfolio||[]).push([[3264],{640:o=>{o.exports=JSON.parse('{"blogBasePath":"/volunteering","blogTitle":"Volunteering","authorsListPath":"/volunteering/authors"}')}}]);
